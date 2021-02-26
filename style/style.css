@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+.header__iner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav__list {
+  display: flex;
+}
+.nav__item {
+  list-style-type: none;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 2;
+  letter-spacing: 0.2px;
+}
+.nav__link {
+  color: #737373;
+  text-decoration: none;
+}
