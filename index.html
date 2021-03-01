@@ -11,40 +11,141 @@
     />
     <link rel="stylesheet" href="style/normalize.css" />
     <link rel="stylesheet" href="style/style.css" />
-    <title>Document</title>
+    <title>Indicorp</title>
   </head>
   <body>
-    <header class="header">
-      <div class="container">
-        <div class="header__iner">
-          <div class="nav__box">
-            <img src="img/logo.svg" alt="logo" class="header__logo" />
-            <nav class="header__nav">
-              <ul class="nav__list">
-                <li class="nav__item">
-                  <a href="#" class="nav__link">Home </a>
-                </li>
-                <li class="nav__item">
-                  <a href="#" class="nav__link">Product</a>
-                </li>
-                <li class="nav__item">
-                  <a href="#" class="nav__link">Pricing</a>
-                </li>
-                <li class="nav__item">
-                  <a href="#" class="nav__link">Contact</a>
-                </li>
-              </ul>
-            </nav>
+    <div class="home">
+      <header class="header">
+        <div class="container">
+          <div class="header__iner">
+            <div class="nav__box">
+              <a href="#" class="header__logo-link">
+                <img src="img/logo.svg" alt="logo" class="header__logo" />
+              </a>
+              <nav class="header__nav">
+                <ul class="nav__list">
+                  <li class="nav__item">
+                    <a href="#" class="nav__link">Home </a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="#" class="nav__link">Product</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="#" class="nav__link">Pricing</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="#" class="nav__link">Contact</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <button class="header__search" type="button">
+              <img
+                src="img/search-btn.svg"
+                alt="Search"
+                class="header__search-img"
+              /></button
+            ><button class="header__basket" type="button">
+              <img
+                src="img/basket.svg"
+                alt="Basket"
+                class="header__basket-img"
+              />
+            </button>
+            <button class="header__togler" type="button">
+              <img
+                src="img/navbar-toggler.svg"
+                alt="togler"
+                class="header__togler-img"
+              />
+            </button>
           </div>
-          <button class="header__togler" type="button">
+        </div>
+      </header>
+      <main class="main">
+        <div class="container">
+          <div class="main__content">
+            <h1 class="main__title">EMPOWER YOUR BUSINESS</h1>
+            <p class="main__text">
+              We know how large objects will act, but things on a small scale.
+            </p>
+            <a href="#" class="main__getquote">Get Quote Now</a>
+            <a href="#" class="main__more">Learn More</a>
+          </div>
+          <div class="main__cards">
+            <div class="main__card">
+              <img src="img/case-card.svg" alt="Case" class="main__card-img" />
+              <h3 class="main__card-title">Digital Marketing</h3>
+              <p class="main__card-text">
+                We focus on ergonomics and meeting you where you work.
+              </p>
+            </div>
+            <div class="main__card">
+              <img
+                src="img/firms-card.svg"
+                alt="Firms"
+                class="main__card-img"
+              />
+              <h3 class="main__card-title">National top 50 firms</h3>
+              <p class="main__card-text">
+                Just type what's on your mind and we'll get you there.
+              </p>
+            </div>
+            <div class="main__card">
+              <img
+                src="img/marketing-card.svg"
+                alt="Marketing"
+                class="main__card-img"
+              />
+              <h3 class="main__card-title">Digital Marketing</h3>
+              <p class="main__card-text">
+                the quick fox jumps over the lazy dog
+              </p>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <section class="choose">
+      <div class="container">
+        <div class="choose__content">
+          <h2 class="choose__title">WHY CHOOSE US</h2>
+          <p class="choose__text">
+            Problems trying to resolve the conflict between the two major realms
+            of Classical physics: Newtonian mechanics
+          </p>
+        </div>
+        <div class="choose__cards">
+          <div class="choose__card">
+            <img src="img/people.svg" alt="People" class="choose_card-img" />
+            <h2 class="choose__card-title">3K</h2>
+            <span class="choose__card-description">CASES DONE</span>
+          </div>
+          <div class="choose__card">
             <img
-              src="img/navbar-toggler.svg"
-              alt="togler"
-              class="header__togler-img"
+              src="img/customer.svg"
+              alt="Customers"
+              class="choose_card-img"
             />
-          </button>
+            <h2 class="choose__card-title">45</h2>
+            <span class="choose__card-description">HAPPY CUSTOMERS</span>
+          </div>
+          <div class="choose__card">
+            <img
+              src="img/awardwinning.svg"
+              alt="Award Winning"
+              class="choose_card-img"
+            />
+            <h2 class="choose__card-title">12+</h2>
+            <span class="choose__card-description">AWARD WINNING</span>
+          </div>
+          <div class="choose__card">
+            <img src="img/case-card.svg" alt="Case" class="choose_card-img" />
+            <h2 class="choose__card-title">1.5K</h2>
+            <span class="choose__card-description">CASES DONE</span>
+          </div>
         </div>
       </div>
-    </header>
+    </section>
   </body>
 </html>
