@@ -1,3 +1,31 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat-Regular.woff2') format('woff2'),
+    url('../fonts/Montserrat-Regular.woff') format('woff');
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat-Medium.woff2') format('woff2'),
+    url('../fonts/Montserrat-Medium.woff') format('woff');
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat-SemiBold.woff2') format('woff2'),
+    url('../fonts/Montserrat-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat-Bold.woff2') format('woff2'),
+    url('../fonts/Montserrat-Bold.woff') format('woff');
+  font-weight: 700;
+  font-display: swap;
+}
 * {
   box-sizing: border-box;
 }
@@ -6,7 +34,7 @@ html {
   padding: 0;
 }
 body {
-  font-family: 'Montserrat', sans-serif;
+  font: 400 14px/1.45 'Montserrat', sans-serif;
 }
 .home {
   background: #fafafa url('../img/main-bg.jpg') no-repeat top;
@@ -38,7 +66,6 @@ body {
 }
 .nav__item {
   font-weight: 600;
-  font-size: 14px;
   line-height: 2;
   letter-spacing: 0.2px;
   list-style-type: none;
@@ -80,7 +107,6 @@ body {
   color: #737373;
   font-weight: 500;
   font-size: 20px;
-  line-height: 1.5;
   letter-spacing: 0.2px;
 }
 .main__getquote {
@@ -165,8 +191,6 @@ body {
   margin: 0 auto 80px;
   color: #737373;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 20px;
   letter-spacing: 0.2px;
   text-align: center;
 }
@@ -217,8 +241,6 @@ body {
   margin: 0px auto 45px;
   color: #737373;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.5;
   letter-spacing: 0.2px;
 }
 .advice__cards {
@@ -319,7 +341,6 @@ body {
   margin: 0;
   color: #737373;
   font-weight: 600;
-  font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.2px;
 }
