@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link rel="stylesheet" href="style/normalize.css" />
     <link rel="stylesheet" href="style/style.css" />
     <title>Indicorp</title>
@@ -14,27 +13,25 @@
       <header class="header">
         <div class="container">
           <div class="header-inner">
-            <div class="nav-box">
-              <a href="#" class="logo">
-                <img src="img/logo.svg" alt="logo" class="logo__img" />
-              </a>
-              <nav class="header-nav">
-                <ul class="nav__list">
-                  <li class="nav__item">
-                    <a href="#" class="nav__link">Home </a>
-                  </li>
-                  <li class="nav__item">
-                    <a href="#" class="nav__link">Product</a>
-                  </li>
-                  <li class="nav__item">
-                    <a href="#" class="nav__link">Pricing</a>
-                  </li>
-                  <li class="nav__item">
-                    <a href="#" class="nav__link">Contact</a>
-                  </li>
-                </ul>
-              </nav>
-            </div>
+            <a href="#" class="header__logo logo">
+              <img src="img/logo.svg" alt="logo" class="logo__img" />
+            </a>
+            <nav class="header__nav">
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <a href="#" class="nav__link">Home </a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__link">Product</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__link">Pricing</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__link">Contact</a>
+                </li>
+              </ul>
+            </nav>
             <button class="header__search" type="button">
               <img
                 src="img/search-btn.svg"
@@ -70,7 +67,11 @@
           </div>
           <div class="empower__cards">
             <div class="empower__card">
-              <img src="img/case-card.svg" alt="Case" class="main__card-img" />
+              <img
+                src="img/case-card.svg"
+                alt="Case"
+                class="empower__card-img"
+              />
               <h3 class="empower__card-title">Digital Marketing</h3>
               <p class="empower__card-text">
                 We focus on ergonomics and meeting you where you work.
@@ -87,7 +88,7 @@
                 Just type what's on your mind and we'll get you there.
               </p>
             </div>
-            <div class="empower__card empower__card--chosen">
+            <div class="empower__card empower__card--choosen">
               <img
                 src="img/marketing-card.svg"
                 alt="Marketing"
@@ -106,7 +107,7 @@
       <section class="choose">
         <div class="container">
           <div class="choose__content">
-            <h2 class="choose__title">WHY CHOOSE US</h2>
+            <h2 class="choose__title second--title">WHY CHOOSE US</h2>
             <p class="choose__text">
               Problems trying to resolve the conflict between the two major
               realms of Classical physics: Newtonian mechanics
@@ -147,7 +148,7 @@
       <section class="advice">
         <div class="container">
           <div class="advice__content">
-            <h2 class="advice__title">Practice Advice</h2>
+            <h2 class="advice__title second--title">Practice Advice</h2>
             <p class="advice__text">
               Problems trying to resolve the conflict between the two major
               realms of Classical physics: Newtonian mechanics
@@ -215,7 +216,7 @@
       <section class="service">
         <div class="container">
           <div class="service__header">
-            <h2 class="service__title">
+            <h2 class="service__title second--title">
               We are providing best business service.
             </h2>
             <p class="setvice__text">
@@ -224,15 +225,32 @@
             </p>
           </div>
           <div class="service__content">
-            <iframe
-              class="service__content-video"
-              src="https://www.youtube.com/embed/7e4FM0G--E8"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
+            <div class="service__content-video-block">
+              <img
+                src="img/poster-video.jpg"
+                alt="Poster"
+                class="service__content-video__poster"
+              />
+              <button class="service__content-video__play">
+                <img
+                  src="img/play.svg"
+                  alt="Play"
+                  class="service__content-video__play-img"
+                />
+              </button>
+              <iframe
+                id="player"
+                class="service__content-video"
+                src="https://www.youtube.com/embed/wnTZyvOs1-k?"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
             <div class="service__content-box">
-              <h2 class="service__content-title">Most trusted in our field</h2>
+              <h2 class="service__content-title second--title">
+                Most trusted in our field
+              </h2>
               <p class="service__content-text">
                 Most calendars are designed for teams. Slate is designed for
                 freelancers who want a simple way to plan their schedule.
@@ -319,7 +337,7 @@
       </section>
       <section class="touch">
         <div class="touch__header">
-          <h2 class="touch__title">Get In Touch</h2>
+          <h2 class="touch__title second--title">Get In Touch</h2>
           <p class="touch__text">
             Problems trying to resolve the conflict between the two major realms
             of Classical physics: Newtonian mechanics
@@ -327,28 +345,35 @@
         </div>
         <div class="touch__cards">
           <div class="touch__card">
-            <img src="img/phone.svg" alt="Phone" class="touch__card-img" /><span
+            <img src="img/phone.svg" alt="Phone" class="touch__card-img" /><a
+              href="mailto:georgia.young@example.com"
               class="touch__card-email"
-              >georgia.young@example.com</span
-            ><span class="touch__card-email">georgia.young@ple.com</span>
+              >georgia.young@example.com</a
+            ><a href="mailto:georgia.young@ple.com" class="touch__card-email"
+              >georgia.young@ple.com</a
+            >
             <h5 class="touch__card-title">Get Support</h5>
             <a href="#" class="touch__card-btn">Submit Request</a>
           </div>
-          <div class="touch__card touch__card-center">
-            <img src="img/label.svg" alt="Label" class="touch__card-img" /><span
+          <div class="touch__card touch__card--center">
+            <img src="img/label.svg" alt="Label" class="touch__card-img" /><a
+              href="mailto:georgia.young@example.com"
               class="touch__card-email"
-              >georgia.young@example.com</span
-            ><span class="touch__card-email">georgia.young@ple.com</span>
+              >georgia.young@example.com</a
+            ><a href="mailto:georgia.young@ple.com" class="touch__card-email"
+              >georgia.young@ple.com</a
+            >
             <h5 class="touch__card-title">Get Support</h5>
             <a href="#" class="touch__card-btn">Submit Request</a>
           </div>
           <div class="touch__card">
-            <img
-              src="img/letter.svg"
-              alt="Letter"
-              class="touch__card-img"
-            /><span class="touch__card-email">georgia.young@example.com</span
-            ><span class="touch__card-email">georgia.young@ple.com</span>
+            <img src="img/letter.svg" alt="Letter" class="touch__card-img" /><a
+              href="mailto:georgia.young@example.com"
+              class="touch__card-email"
+              >georgia.young@example.com</a
+            ><a href="mailto:georgia.young@ple.com" class="touch__card-email"
+              >georgia.young@ple.com</a
+            >
             <h5 class="touch__card-title">Get Support</h5>
             <a href="#" class="touch__card-btn">Submit Request</a>
           </div>
@@ -374,84 +399,84 @@
     <footer class="footer">
       <div class="container">
         <div class="footer__content">
-          <div class="footer__content-links">
-            <div class="footer__content-company">
-              <h5 class="footer__content-header">Company Info</h5>
-              <ul class="footer__content-list">
-                <li class="footer__content-item">
-                  <a href="#" class="footer__content-link">About Us</a>
+          <div class="footer__links">
+            <div class="footer__company">
+              <h5 class="footer__company-header">Company Info</h5>
+              <ul class="footer__company-list">
+                <li class="footer__company-item">
+                  <a href="#" class="footer__company-link">About Us</a>
                 </li>
-                <li class="footer__content-item">
-                  <a href="#" class="footer__content-link">Carrier</a>
+                <li class="footer__company-item">
+                  <a href="#" class="footer__company-link">Carrier</a>
                 </li>
-                <li class="footer__content-item">
-                  <a href="#" class="footer__content-link">We are hiring</a>
+                <li class="footer__company-item">
+                  <a href="#" class="footer__company-link">We are hiring</a>
                 </li>
-                <li class="footer__content-item">
-                  <a href="#" class="footer__content-link">Blog</a>
-                </li>
-              </ul>
-            </div>
-            <div class="footer__content-company">
-              <h5 class="footer__content-header">Legal</h5>
-              <ul class="footer__content-list">
-                <li class="footer__content-item">
-                  <a href="#" class="footer__content-link">About Us</a>
-                </li>
-                <li class="footer__content-item">
-                  <a href="#" class="footer__content-link">Carrier</a>
-                </li>
-                <li class="footer__content-item">
-                  <a href="#" class="footer__content-link">We are hiring</a>
-                </li>
-                <li class="footer__content-item">
-                  <a href="#" class="footer__content-link">Blog</a>
+                <li class="footer__company-item">
+                  <a href="#" class="footer__company-link">Blog</a>
                 </li>
               </ul>
             </div>
-            <div class="footer__content-company">
-              <h5 class="footer__content-header">Features</h5>
-              <ul class="footer__content-list">
-                <li class="footer__content-item">
-                  <a href="#" class="footer__content-link"
+            <div class="footer__company">
+              <h5 class="footer__company-header">Legal</h5>
+              <ul class="footer__company-list">
+                <li class="footer__company-item">
+                  <a href="#" class="footer__company-link">About Us</a>
+                </li>
+                <li class="footer__company-item">
+                  <a href="#" class="footer__company-link">Carrier</a>
+                </li>
+                <li class="footer__company-item">
+                  <a href="#" class="footer__company-link">We are hiring</a>
+                </li>
+                <li class="footer__company-item">
+                  <a href="#" class="footer__company-link">Blog</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__company">
+              <h5 class="footer__company-header">Features</h5>
+              <ul class="footer__company-list">
+                <li class="footer__company-item">
+                  <a href="#" class="footer__company-link"
                     >Business Marketing</a
                   >
                 </li>
-                <li class="footer__content-item">
-                  <a href="#" class="footer__content-link">User Analytic</a>
+                <li class="footer__company-item">
+                  <a href="#" class="footer__company-link">User Analytic</a>
                 </li>
-                <li class="footer__content-item">
-                  <a href="#" class="footer__content-link">Live Chat</a>
+                <li class="footer__company-item">
+                  <a href="#" class="footer__company-link">Live Chat</a>
                 </li>
-                <li class="footer__content-item">
-                  <a href="#" class="footer__content-link">Unlimited Support</a>
+                <li class="footer__company-item">
+                  <a href="#" class="footer__company-link">Unlimited Support</a>
                 </li>
               </ul>
             </div>
-            <div class="footer__content-company">
-              <h5 class="footer__content-header">Resources</h5>
-              <ul class="footer__content-list">
-                <li class="footer__content-item">
-                  <a href="#" class="footer__content-link">IOS & Android</a>
+            <div class="footer__company">
+              <h5 class="footer__company-header">Resources</h5>
+              <ul class="footer__company-list">
+                <li class="footer__company-item">
+                  <a href="#" class="footer__company-link">IOS & Android</a>
                 </li>
-                <li class="footer__content-item">
-                  <a href="#" class="footer__content-link">Watch a Demo</a>
+                <li class="footer__company-item">
+                  <a href="#" class="footer__company-link">Watch a Demo</a>
                 </li>
-                <li class="footer__content-item">
-                  <a href="#" class="footer__content-link">Customers</a>
+                <li class="footer__company-item">
+                  <a href="#" class="footer__company-link">Customers</a>
                 </li>
-                <li class="footer__content-item">
-                  <a href="#" class="footer__content-link">API</a>
+                <li class="footer__company-item">
+                  <a href="#" class="footer__company-link">API</a>
                 </li>
               </ul>
             </div>
           </div>
-          <div class="footer__content-social">
-            <div class="footer__content-company">
-              <h5 class="footer__content-header">Get In Touch</h5>
-              <ul class="footer__content-list">
-                <li class="footer__content-item">
-                  <a href="#" class="footer__content-link"
+          <div class="footer__social">
+            <div class="footer__company">
+              <h5 class="footer__company-header">Get In Touch</h5>
+              <ul class="footer__company-list">
+                <li class="footer__company-item">
+                  <a href="#" class="footer__company-link"
                     ><img
                       src="img/phone-footer.svg"
                       alt="Phone"
@@ -459,8 +484,8 @@
                     />(480) 555-0103</a
                   >
                 </li>
-                <li class="footer__content-item">
-                  <a href="#" class="footer__content-link">
+                <li class="footer__company-item">
+                  <a href="#" class="footer__company-link">
                     <img
                       src="img/label-footer.png"
                       alt="Label"
@@ -469,8 +494,8 @@
                     4517 Washington Ave.
                   </a>
                 </li>
-                <li class="footer__content-item">
-                  <a href="#" class="footer__content-link"
+                <li class="footer__company-item">
+                  <a href="#" class="footer__company-link"
                     ><img
                       src="img/letter-footer.svg"
                       alt="Letter"
@@ -487,9 +512,9 @@
       <div class="copyright">
         <div class="container">
           <div class="copyright__content">
-            <h6 class="copyright__title">
+            <span class="copyright__title">
               Made With Love By Figmaland All Right Reserved
-            </h6>
+            </span>
             <div class="copyright__social">
               <a href="#" class="copyright__social-link"
                 ><img
@@ -517,5 +542,6 @@
         </div>
       </div>
     </footer>
+    <script src="js/main.js"></script>
   </body>
 </html>
