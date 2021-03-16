@@ -12,11 +12,11 @@
     <div class="home">
       <header class="header">
         <div class="container">
-          <div class="header-inner">
+          <div class="header__inner">
             <a href="#" class="header__logo logo">
               <img src="img/logo.svg" alt="logo" class="logo__img" />
             </a>
-            <nav class="header__nav">
+            <nav class="nav">
               <ul class="nav__list">
                 <li class="nav__item">
                   <a href="#" class="nav__link">Home </a>
@@ -58,9 +58,13 @@
       <section class="empower">
         <div class="container">
           <div class="empower__content">
-            <h1 class="empower__title">EMPOWER YOUR BUSINESS</h1>
+            <h1 class="empower__title">EMPOWER YOUR&nbsp;BUSINESS</h1>
             <p class="empower__text">
               We know how large objects will act, but things on a small scale.
+            </p>
+            <p class="empower__text--mobile">
+              We know how large objects&nbsp;will&nbsp;act, but things
+              on&nbsp;a&nbsp;small scale just do not&nbsp;act&nbsp;that way.
             </p>
             <a href="#" class="getquote__btn">Get Quote Now</a>
             <a href="#" class="more__btn">Learn More</a>
@@ -83,7 +87,10 @@
                 alt="Firms"
                 class="empower__card-img"
               />
-              <h3 class="empower__card-title">National top 50 firms</h3>
+              <h3 class="empower__card-title empower__card-title--none">
+                National top 50&nbsp;firms
+              </h3>
+              <h3 class="empower__card-title--mobile">Web Development</h3>
               <p class="empower__card-text">
                 Just type what's on your mind and we'll get you there.
               </p>
@@ -107,7 +114,9 @@
       <section class="choose">
         <div class="container">
           <div class="choose__content">
-            <h2 class="choose__title second--title">WHY CHOOSE US</h2>
+            <h2 class="choose__title choose__title--second">
+              WHY CHOOSE&nbsp;US
+            </h2>
             <p class="choose__text">
               Problems trying to resolve the conflict between the two major
               realms of Classical physics: Newtonian mechanics
@@ -126,7 +135,7 @@
                 class="choose_card-img"
               />
               <h2 class="choose__card-title">45</h2>
-              <span class="choose__card-description">HAPPY CUSTOMERS</span>
+              <span class="choose__card-description">HAPPY&nbsp;CUSTOMERS</span>
             </div>
             <div class="choose__card">
               <img
@@ -148,10 +157,11 @@
       <section class="advice">
         <div class="container">
           <div class="advice__content">
-            <h2 class="advice__title second--title">Practice Advice</h2>
+            <h2 class="advice__title advice__title--second">Practice Advice</h2>
             <p class="advice__text">
-              Problems trying to resolve the conflict between the two major
-              realms of Classical physics: Newtonian mechanics
+              Problems trying to resolve the&nbsp;conflict&nbsp;between the
+              two&nbsp;major&nbsp;realms of Classical physics:&nbsp;Newtonian
+              mechanics
             </p>
           </div>
           <div class="advice__cards">
@@ -172,9 +182,13 @@
             <div class="advice__card">
               <div class="advice__card-content">
                 <h5 class="advice__card-title">Fastest way to organize</h5>
-                <p class="advice__card-text">
+                <p class="advice__card-text advice__card-text--none">
                   “Quantum mechanics” is the description of the behaviour of
                   matter
+                </p>
+                <p class="advice__card-text--mobile">
+                  Newton thought that light was made up of particles, but then
+                  it was discovered
                 </p>
               </div>
               <img
@@ -216,12 +230,18 @@
       <section class="service">
         <div class="container">
           <div class="service__header">
-            <h2 class="service__title second--title">
+            <h2
+              class="service__title service__title--second service__title--none"
+            >
               We are providing best business service.
             </h2>
+            <h2 class="service__title--second service__title--mobile">
+              We take care customers our all expert here.
+            </h2>
             <p class="setvice__text">
-              Problems trying to resolve the conflict between the two major
-              realms of Classical physics: Newtonian mechanics
+              Problems trying to resolve the&nbsp;conflict&nbsp;between&nbsp;the
+              two&nbsp;major&nbsp;realms&nbsp;of Classical
+              physics:&nbsp;Newtonian mechanics
             </p>
           </div>
           <div class="service__content">
@@ -248,7 +268,7 @@
               ></iframe>
             </div>
             <div class="service__content-box">
-              <h2 class="service__content-title second--title">
+              <h2 class="service__content-title service__content-title--second">
                 Most trusted in our field
               </h2>
               <p class="service__content-text">
@@ -291,7 +311,7 @@
       </section>
       <section class="clients">
         <div class="container">
-          <div class="clients__brands">
+          <div class="clients__brands clients__brands--none">
             <img
               src="img/brand-hooli.svg"
               alt="Hooli"
@@ -318,64 +338,104 @@
               class="clients__brands-img"
             />
           </div>
+          <div class="clients__brands clients__brands--mobile">
+            <img
+              src="img/brand-hooli-mobile.svg"
+              alt="Hooli"
+              class="clients__brands-img"
+            /><img
+              src="img/brand-lyft-mobile.svg"
+              alt="Lyft"
+              class="clients__brands-img"
+            /><img
+              src="img/brands-mobile.svg"
+              alt="Brand"
+              class="clients__brands-img"
+            /><img
+              src="img/brand-stripe-mobile.svg"
+              alt="Stripe"
+              class="clients__brands-img"
+            /><img
+              src="img/brand-aws-mobile.svg"
+              alt="Aws"
+              class="clients__brands-img"
+            /><img
+              src="img/brand-mobile.svg"
+              alt="Brand"
+              class="clients__brands-img"
+            />
+          </div>
         </div>
       </section>
       <section class="newsletter">
         <div class="container">
-          <div class="newsletter__content">
-            <h3 class="newsletter__title">Subscribe For Latest Newsletter</h3>
-            <form action="#" class="newsletter__form">
-              <input
-                class="newsletter__input"
-                type="email"
-                placeholder="Your Email"
-              />
-              <input type="submit" class="newsletter__btn" value="Subscribe" />
-            </form>
+          <div class="newsletter__wrapper">
+            <div class="newsletter__content">
+              <h3 class="newsletter__title">Subscribe For Latest Newsletter</h3>
+              <form action="#" class="newsletter__form">
+                <input
+                  class="newsletter__input"
+                  type="email"
+                  placeholder="Your Email"
+                />
+                <input
+                  type="submit"
+                  class="newsletter__btn"
+                  value="Subscribe"
+                />
+              </form>
+            </div>
           </div>
         </div>
       </section>
       <section class="touch">
-        <div class="touch__header">
-          <h2 class="touch__title second--title">Get In Touch</h2>
-          <p class="touch__text">
-            Problems trying to resolve the conflict between the two major realms
-            of Classical physics: Newtonian mechanics
-          </p>
-        </div>
-        <div class="touch__cards">
-          <div class="touch__card">
-            <img src="img/phone.svg" alt="Phone" class="touch__card-img" /><a
-              href="mailto:georgia.young@example.com"
-              class="touch__card-email"
-              >georgia.young@example.com</a
-            ><a href="mailto:georgia.young@ple.com" class="touch__card-email"
-              >georgia.young@ple.com</a
-            >
-            <h5 class="touch__card-title">Get Support</h5>
-            <a href="#" class="touch__card-btn">Submit Request</a>
+        <div class="container">
+          <div class="touch__header">
+            <h2 class="touch__title touch__title--second">Get In Touch</h2>
+            <p class="touch__text">
+              Problems trying to resolve the conflict between
+              the&nbsp;two&nbsp;major&nbsp;realms of Classical physics:
+              Newtonian mechanics
+            </p>
           </div>
-          <div class="touch__card touch__card--center">
-            <img src="img/label.svg" alt="Label" class="touch__card-img" /><a
-              href="mailto:georgia.young@example.com"
-              class="touch__card-email"
-              >georgia.young@example.com</a
-            ><a href="mailto:georgia.young@ple.com" class="touch__card-email"
-              >georgia.young@ple.com</a
-            >
-            <h5 class="touch__card-title">Get Support</h5>
-            <a href="#" class="touch__card-btn">Submit Request</a>
-          </div>
-          <div class="touch__card">
-            <img src="img/letter.svg" alt="Letter" class="touch__card-img" /><a
-              href="mailto:georgia.young@example.com"
-              class="touch__card-email"
-              >georgia.young@example.com</a
-            ><a href="mailto:georgia.young@ple.com" class="touch__card-email"
-              >georgia.young@ple.com</a
-            >
-            <h5 class="touch__card-title">Get Support</h5>
-            <a href="#" class="touch__card-btn">Submit Request</a>
+          <div class="touch__cards">
+            <div class="touch__card">
+              <img src="img/phone.svg" alt="Phone" class="touch__card-img" /><a
+                href="mailto:georgia.young@example.com"
+                class="touch__card-email"
+                >georgia.young@example.com</a
+              ><a href="mailto:georgia.young@ple.com" class="touch__card-email"
+                >georgia.young@ple.com</a
+              >
+              <h5 class="touch__card-title">Get Support</h5>
+              <a href="#" class="touch__card-btn">Submit Request</a>
+            </div>
+            <div class="touch__card touch__card--center">
+              <img src="img/label.svg" alt="Label" class="touch__card-img" /><a
+                href="mailto:georgia.young@example.com"
+                class="touch__card-email"
+                >georgia.young@example.com</a
+              ><a href="mailto:georgia.young@ple.com" class="touch__card-email"
+                >georgia.young@ple.com</a
+              >
+              <h5 class="touch__card-title">Get Support</h5>
+              <a href="#" class="touch__card-btn">Submit Request</a>
+            </div>
+            <div class="touch__card">
+              <img
+                src="img/letter.svg"
+                alt="Letter"
+                class="touch__card-img"
+              /><a
+                href="mailto:georgia.young@example.com"
+                class="touch__card-email"
+                >georgia.young@example.com</a
+              ><a href="mailto:georgia.young@ple.com" class="touch__card-email"
+                >georgia.young@ple.com</a
+              >
+              <h5 class="touch__card-title">Get Support</h5>
+              <a href="#" class="touch__card-btn">Submit Request</a>
+            </div>
           </div>
         </div>
       </section>
@@ -384,7 +444,7 @@
           <div class="consulting__content">
             <div class="consulting__header">
               <h3 class="consulting__title">
-                Consulting Agency For Your Business
+                Consulting&nbsp;Agency For Your Business
               </h3>
               <p class="consulting__text">
                 the quick fox jumps over the lazy dog
@@ -472,7 +532,7 @@
             </div>
           </div>
           <div class="footer__social">
-            <div class="footer__company">
+            <div class="footer__company--social">
               <h5 class="footer__company-header">Get In Touch</h5>
               <ul class="footer__company-list">
                 <li class="footer__company-item">
@@ -513,7 +573,7 @@
         <div class="container">
           <div class="copyright__content">
             <span class="copyright__title">
-              Made With Love By Figmaland All Right Reserved
+              Made With Love By Figmaland All&nbsp;Right Reserved
             </span>
             <div class="copyright__social">
               <a href="#" class="copyright__social-link"
