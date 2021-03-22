@@ -10,13 +10,13 @@
   </head>
   <body>
     <div class="home">
-      <header class="header">
+      <header class="header header--mobile">
         <div class="container">
           <div class="header__inner">
             <a href="#" class="header__logo logo">
               <img src="img/logo.svg" alt="logo" class="logo__img" />
             </a>
-            <nav class="nav">
+            <nav class="nav is-open">
               <ul class="nav__list">
                 <li class="nav__item">
                   <a href="#" class="nav__link">Home </a>
@@ -235,28 +235,25 @@
             >
               We are providing best business service.
             </h2>
-            <h2 class="service__title--second service__title--mobile">
+            <h2
+              class="service__title service__title--second service__title--mobile"
+            >
               We take care customers our all expert here.
             </h2>
             <p class="setvice__text">
-              Problems trying to resolve the&nbsp;conflict&nbsp;between&nbsp;the
-              two&nbsp;major&nbsp;realms&nbsp;of Classical
-              physics:&nbsp;Newtonian mechanics
+              Problems trying to resolve the conflict between the two major
+              realms of Classical physics: Newtonian mechanics
             </p>
           </div>
           <div class="service__content">
-            <div class="service__content-video-block">
+            <div class="service__video">
               <img
                 src="img/poster-video.jpg"
                 alt="Poster"
-                class="service__content-video__poster"
+                class="service__poster"
               />
-              <button class="service__content-video__play">
-                <img
-                  src="img/play.svg"
-                  alt="Play"
-                  class="service__content-video__play-img"
-                />
+              <button class="service__button-play">
+                <img src="img/play.svg" alt="Play" class="service__play-img" />
               </button>
               <iframe
                 id="player"
@@ -268,39 +265,39 @@
               ></iframe>
             </div>
             <div class="service__content-box">
-              <h2 class="service__content-title service__content-title--second">
+              <h2 class="service__content-title service__title--second">
                 Most trusted in our field
               </h2>
               <p class="service__content-text">
                 Most calendars are designed for teams. Slate is designed for
                 freelancers who want a simple way to plan their schedule.
               </p>
-              <div class="service__content-fox">
+              <div class="service__item">
                 <img
                   src="img/people-fox.svg"
                   alt="People"
                   class="service__content-img"
                 />
-                <div class="service__content-fox-wrapper">
-                  <h5 class="service__content-fox-title">
+                <div class="service__wrapper">
+                  <h5 class="service__item-title">
                     the quick fox jumps over the lazy dog
                   </h5>
-                  <p class="service__content-fox-text">
+                  <p class="service__item-text">
                     Things on a very small scale ...
                   </p>
                 </div>
               </div>
-              <div class="service__content-fox">
+              <div class="service__item">
                 <img
                   src="img/speed-fox.svg"
                   alt="Speed Fox"
                   class="service__content-img"
                 />
-                <div class="service__content-fox-wrapper">
-                  <h5 class="service__content-fox-title">
+                <div class="service__wrapper">
+                  <h5 class="service__item-title">
                     the quick fox jumps over the lazy dog
                   </h5>
-                  <p class="service__content-fox-text">
+                  <p class="service__item-text">
                     Things on a very small scale ...
                   </p>
                 </div>
@@ -460,83 +457,81 @@
       <div class="container">
         <div class="footer__content">
           <div class="footer__links">
-            <div class="footer__company">
-              <h5 class="footer__company-header">Company Info</h5>
-              <ul class="footer__company-list">
-                <li class="footer__company-item">
-                  <a href="#" class="footer__company-link">About Us</a>
+            <div class="footer__column">
+              <h5 class="footer__column-header">Company Info</h5>
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <a href="#" class="footer__link">About Us</a>
                 </li>
-                <li class="footer__company-item">
-                  <a href="#" class="footer__company-link">Carrier</a>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">Carrier</a>
                 </li>
-                <li class="footer__company-item">
-                  <a href="#" class="footer__company-link">We are hiring</a>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">We are hiring</a>
                 </li>
-                <li class="footer__company-item">
-                  <a href="#" class="footer__company-link">Blog</a>
-                </li>
-              </ul>
-            </div>
-            <div class="footer__company">
-              <h5 class="footer__company-header">Legal</h5>
-              <ul class="footer__company-list">
-                <li class="footer__company-item">
-                  <a href="#" class="footer__company-link">About Us</a>
-                </li>
-                <li class="footer__company-item">
-                  <a href="#" class="footer__company-link">Carrier</a>
-                </li>
-                <li class="footer__company-item">
-                  <a href="#" class="footer__company-link">We are hiring</a>
-                </li>
-                <li class="footer__company-item">
-                  <a href="#" class="footer__company-link">Blog</a>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">Blog</a>
                 </li>
               </ul>
             </div>
-            <div class="footer__company">
-              <h5 class="footer__company-header">Features</h5>
-              <ul class="footer__company-list">
-                <li class="footer__company-item">
-                  <a href="#" class="footer__company-link"
-                    >Business Marketing</a
-                  >
+            <div class="footer__column">
+              <h5 class="footer__column-header">Legal</h5>
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <a href="#" class="footer__link">About Us</a>
                 </li>
-                <li class="footer__company-item">
-                  <a href="#" class="footer__company-link">User Analytic</a>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">Carrier</a>
                 </li>
-                <li class="footer__company-item">
-                  <a href="#" class="footer__company-link">Live Chat</a>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">We are hiring</a>
                 </li>
-                <li class="footer__company-item">
-                  <a href="#" class="footer__company-link">Unlimited Support</a>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">Blog</a>
                 </li>
               </ul>
             </div>
-            <div class="footer__company">
-              <h5 class="footer__company-header">Resources</h5>
-              <ul class="footer__company-list">
-                <li class="footer__company-item">
-                  <a href="#" class="footer__company-link">IOS & Android</a>
+            <div class="footer__column">
+              <h5 class="footer__column-header">Features</h5>
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <a href="#" class="footer__link">Business Marketing</a>
                 </li>
-                <li class="footer__company-item">
-                  <a href="#" class="footer__company-link">Watch a Demo</a>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">User Analytic</a>
                 </li>
-                <li class="footer__company-item">
-                  <a href="#" class="footer__company-link">Customers</a>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">Live Chat</a>
                 </li>
-                <li class="footer__company-item">
-                  <a href="#" class="footer__company-link">API</a>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">Unlimited Support</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__column">
+              <h5 class="footer__column-header">Resources</h5>
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <a href="#" class="footer__link">IOS & Android</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">Watch a Demo</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">Customers</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">API</a>
                 </li>
               </ul>
             </div>
           </div>
           <div class="footer__social">
-            <div class="footer__company--social">
-              <h5 class="footer__company-header">Get In Touch</h5>
-              <ul class="footer__company-list">
-                <li class="footer__company-item">
-                  <a href="#" class="footer__company-link"
+            <div class="footer__column--social">
+              <h5 class="footer__column-header">Get In Touch</h5>
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <a href="#" class="footer__link"
                     ><img
                       src="img/phone-footer.svg"
                       alt="Phone"
@@ -544,8 +539,8 @@
                     />(480) 555-0103</a
                   >
                 </li>
-                <li class="footer__company-item">
-                  <a href="#" class="footer__company-link">
+                <li class="footer__item">
+                  <a href="#" class="footer__link">
                     <img
                       src="img/label-footer.png"
                       alt="Label"
@@ -554,8 +549,8 @@
                     4517 Washington Ave.
                   </a>
                 </li>
-                <li class="footer__company-item">
-                  <a href="#" class="footer__company-link"
+                <li class="footer__item">
+                  <a href="#" class="footer__link"
                     ><img
                       src="img/letter-footer.svg"
                       alt="Letter"
