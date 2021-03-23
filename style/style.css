@@ -860,7 +860,7 @@ body {
     align-items: center;
   }
   .advice__card {
-    width: 66%;
+    width: 68%;
     margin-right: 0;
   }
   .advice__card-text--none {
@@ -868,6 +868,7 @@ body {
   }
   .advice__card-text--mobile {
     display: block;
+    margin-bottom: 0;
     color: #737373;
     font-weight: 500;
     line-height: 1.45;
